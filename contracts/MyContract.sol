@@ -49,10 +49,6 @@ function buyTokens(uint _amount) public payable returns(bool){
     return true;}
 }         
 
-function SaleToken(uint _amount) public returns(bool){
-
-}
-
 function withdrawMoney() public onlyOwner{
     require(address(this).balance > 0,"");
     payable(owner).transfer(address(this).balance);
